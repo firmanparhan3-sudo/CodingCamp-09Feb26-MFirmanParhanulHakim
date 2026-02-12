@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Company Profile</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechNova Solutions - Company Profile</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav>
-    <div class="logo">My Company</div>
-    <ul>
-      <li><a href="#home">home</a></li>
-      <li><a href="#profile">Our Profile</a></li>
-      <li><a href="#message">message Us</a></li>
-    </ul>
-  </nav>
-  
-<header id="home">
+
+    <nav>
+        <div class="logo">TechNova</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#profile">Our Profile</a></li>
+            <li><a href="#message">Message Us</a></li>
+        </ul>
+    </nav>
+
+    <header id="home">
         <div class="welcome-container">
-            <h1 id="welcome-text">Hi User, Welcome To Website</h1>
-            <p>Inovasi Tanpa Batas untuk Masa Depan Digital Anda.</p>
+            <h1 id="welcome-text">Hi [Name], Welcome To Website</h1>
+            <p>Limitless Innovation for Your Digital Future.</p>
         </div>
         <div class="banner">
             <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80" alt="TechNova Office Banner">
@@ -29,25 +30,58 @@
     <section id="profile">
         <div class="about-container">
             <h2>About Our Company</h2>
-            <p><strong>TechNova Solutions</strong> didirikan pada tahun 2015 dengan misi untuk mendigitalisasi bisnis di seluruh Indonesia. Kami adalah tim pengembang, desainer, dan pemikir strategis yang berdedikasi untuk menciptakan produk digital yang tidak hanya fungsional, tetapi juga memberikan pengalaman pengguna yang luar biasa.</p>
+            <p><strong>TechNova Solutions</strong> was founded in 2015 with a mission to digitalize businesses across Indonesia. We are a team of developers, designers, and strategic thinkers dedicated to creating digital products that are not only functional but also provide an exceptional user experience.</p>
         </div>
         
         <div class="vision-mission-grid">
             <div class="card">
-                <h3>Visi</h3>
-                <p>Menjadi mitra transformasi digital nomor satu di Asia Tenggara yang memberdayakan bisnis melalui teknologi mutakhir.</p>
+                <h3>Our Vision</h3>
+                <p>To be the number one digital transformation partner in Southeast Asia, empowering businesses through cutting-edge technology.</p>
             </div>
             <div class="card">
-                <h3>Misi</h3>
+                <h3>Our Mission</h3>
                 <ul>
-                    <li>Menyediakan solusi perangkat lunak yang inovatif dan terukur.</li>
-                    <li>Membangun ekosistem digital yang inklusif untuk UMKM hingga Korporasi.</li>
-                    <li>Memberikan layanan konsultasi teknologi dengan standar kualitas global.</li>
+                    <li>Providing innovative and scalable software solutions.</li>
+                    <li>Building an inclusive digital ecosystem for MSMEs to Corporations.</li>
+                    <li>Providing technology consulting services with global quality standards.</li>
                 </ul>
             </div>
         </div>
     </section>
 
-<script src="script.js"></script>
+    <section id="message">
+        <h2>Message Us</h2>
+        <div class="container">
+            <form id="message-form">
+                <label for="name-input">Full Name:</label>
+                <input type="text" id="name-input" placeholder="Enter your full name" required>
+                
+                <label for="email-input">Email Address:</label>
+                <input type="email" id="email-input" placeholder="example@mail.com" required>
+                
+                <label for="phone-input">Phone Number:</label>
+                <input type="tel" id="phone-input" placeholder="0812xxxx" required>
+                
+                <label for="message-input">Message:</label>
+                <textarea id="message-input" placeholder="Your questions or inquiries" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+
+            <div id="result-display" class="result-box">
+                <h3>Input Results:</h3>
+                <p><strong>Name:</strong> <span id="res-name">-</span></p>
+                <p><strong>Email:</strong> <span id="res-email">-</span></p>
+                <p><strong>Phone:</strong> <span id="res-phone">-</span></p>
+                <p><strong>Message:</strong> <span id="res-msg">-</span></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Created by MFirmanParhanulHakim &copy; 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
